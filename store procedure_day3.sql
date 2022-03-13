@@ -65,8 +65,8 @@ SQL Server allows you to specify default values for parameters so that when you 
 
 See the following stored procedure:*/
 ALTER PROCEDURE uspFindProducts(
-    @City VARCHAR(50) = '0',
-    @Address VARCHAR(100)='9999'
+    @City VARCHAR(50) = 'jaunpur',
+    @Address VARCHAR(100)='up'
     ,@name  VARCHAR(50)
 )
 AS
@@ -85,7 +85,7 @@ BEGIN
         City;
 END;
 
-EXEC  uspFindProducts @name='Singh';
+EXEC  uspFindProducts @name='Seth';
 -----------------------------------ANOTHER PRACTICE OF STORE PROCEDURE-------------------------------
 CREATE PROC spProcedure
 AS
@@ -151,3 +151,7 @@ AS
 BEGIN
 	SET @Result =@num1+@num2; 
 END
+/*important some definations
+@ ---->in sql declare parameter using @
+@parameter in sp declare this formal parameter,in normally output time its is actual parameter
+sp  in prefix its good practice */

@@ -41,23 +41,24 @@ CREATE TABLE EmployList(
 	Email varchar(40),
 	Experience int default(0) 
 	);
+	---------------------EXECUTE TABLE--------------
 
 SELECT *FROM EmployList;
-
+-----------------------ADDED VALUE---------------------------
 INSERT INTO EmployList(LastName,FirstName,JobRole,Salary,PhoneNumber,Address,City,PinCode,Email,Experience)
 VALUES('dewj','frn1','modjbel',545560,995456152,'mujbffhj0','viugojfgt',5565661,'englishglo@gmail.com',9);
-
+------------------------EXECUTE VALUE-------------------
 SELECT
     *
 FROM
     EmployList;
-
+-----------------------------------------EXCUTE VALUE-------------------------------
 SELECT
     FirstName,
     LastName
 FROM
     EmployList;
-
+-----------------------EXECUTE PARTICULAR VALUE---------------------------
 SELECT
     FirstName,
     LastName,
@@ -65,22 +66,19 @@ SELECT
 FROM
     EmployList;
 
-
+------------------------------------EXECUTE PARTICULAR COLUMNS----------------------
 	SELECT
     *
 FROM
     EmployList;
-
-
-
+-----------------------------------------EXECUTE TABLE------------------------
 	SELECT
     *
 FROM
     EmployList
 WHERE
     PinCode = 516001;
-
-
+-----------------------------------------EXECUTE PINCODE COLUMN USE WHERE CONDITION-----------------
 	SELECT
     *
 FROM
@@ -89,8 +87,7 @@ WHERE
     Salary= 0
 ORDER BY
     FirstName;
-
-
+---------------------------------------EXECUTE PINCODE COLUMN USE WHERE CONDITION ONE ORDER BY ----------------
 	SELECT
 	City,
    COUNT(*)
@@ -102,8 +99,7 @@ GROUP BY
     City
 ORDER BY
     City;
-
-
+--------------------------------------EXECUTE PINCODE COLUMN USE WHERE CONDITION ONE ORDER BY USING GROUP BY SAME VALUE--------------
 	SELECT
     City,
     COUNT (*)
@@ -117,6 +113,7 @@ HAVING
     COUNT (*) >= 1
 ORDER BY
     City;
+------------------------EXECUTE PINCODE COLUMN USE WHERE CONDITION ONE ORDER BY USING GROUP BY SAME VALUE USE HAVING CONDITON less than 2--------------
 	-------------------------------------------------SECTION 2-----------------------------
 -----------------Order By Clause in Details--------------
 
@@ -509,6 +506,7 @@ FROM
     hr.candidates c
     INNER JOIN hr.employees e 
         ON e.fullname = c.fullname;
+
 
 
 
