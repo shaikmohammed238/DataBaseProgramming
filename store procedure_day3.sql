@@ -322,3 +322,32 @@ Here is the output:
 
 x > 0 and x < y
 It is a good practice to not nest an IF statement inside another statement because it makes the code difficult to read and hard to maintain.*/
+
+
+
+ CREATE  VIEW Vwemploy---------------------CREATE VIEW
+ AS
+ SELECT *FROM EmployList;
+
+  SELECT *FROM Vwemploy; -----------------EXCUTE VIEW
+
+  ALTER  VIEW Vwemploy---------------------ALTER VIEW
+ AS
+ SELECT LastName  FROM EmployList;
+
+ DROP VIEW Vwemploy;
+
+ /* By definition, views do not store data except for indexed views.
+
+A view may consist of columns from multiple tables using joins or just a subset of columns of a single table. This makes views useful for abstracting or hiding complex queries.
+
+The following picture illustrates a view that includes columns from multiple tables:
+
+SQL Server Views
+Advantages of views
+Generally speaking, views provide the following advantages:
+
+Security
+You can restrict users to access directly to a table and allow them to access a subset of data via views.
+
+For example, you can allow users to access customer name, phone, email via a view but restrict them to access the bank account and other sensitive information.*/
