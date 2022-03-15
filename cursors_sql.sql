@@ -79,7 +79,7 @@ when a cursor is opened , rows can be fecthed from the cursor one by one or in a
 
 ---------------------------------------WITHOUT CURSOR VARIABLE--------------------------------
 
- FETCH FIRST FROM Mycursor -----------> HEAR USING WITHOUT VARIABLE CURSOR WITH first METHOD
+ FETCH FIRST FROM Mycursor -----------> HEAR USING WITHOUT VARIABLE CURSOR WITH first METHODs
  FETCH NEXT FROM Mycursor-----------> HEAR USING WITHOUT VARIABLE CURSOR WITH NEXT METHOD
   FETCH LAST FROM Mycursor-----------> HEAR USING WITHOUT VARIABLE CURSOR WITH LAST METHOD
  FETCH PRIOR FROM Mycursor-----------> HEAR USING WITHOUT VARIABLE CURSOR WITH PRIOR METHOD
