@@ -136,7 +136,7 @@ CLOSE Mycursorp---------close cursor
 /*
 5)de-allocating cursor:-
 cursors should be deallocated to delete cursor defination and release all the system resources with the cursor
-when your work or function is complte using cursor, destroy or delete cursor
+when your work or function is complte using cursor, destroy or delete cursor it
 */
 DEALLOCATE Mycursorp;
 
