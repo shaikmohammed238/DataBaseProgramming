@@ -130,13 +130,13 @@ when a cursor is opened , rows can be fecthed from the cursor one by one or in a
 
 
 /*4)closing cursor :-
-the cursor should be closed by explicit after dml
+the cursor should be closed by explicit after dml = data manipulation language
 */
 CLOSE Mycursorp---------close cursor
 /*
 5)de-allocating cursor:-
 cursors should be deallocated to delete cursor defination and release all the system resources with the cursor
-when your work or function is complte using cursor, destroy or delete cursor it
+when your work or function is complte using cursor, destroy or delete cursor 
 */
 DEALLOCATE Mycursorp;
 
