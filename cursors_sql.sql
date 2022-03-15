@@ -110,19 +110,19 @@ DEALLOCATE Mycursor;
 when a cursor is opened , rows can be fecthed from the cursor one by one or in a block to do data manipulation*/
 
 
- FETCH FIRST FROM Mycursorp INTO @empid, @empfirstname, @emplastname -----------> HEAR USING WITH VARIABLE CURSOR WITH first METHOD
+ FETCH FIRST FROM Mycursorp INTO @empid, @empfirstname, @emplastname -----------> HEAR USING WITH VARIABLE CURSOR WITH first METHOD and declare variables
  PRINT 'Employee is: '+CAST(@empid AS VARCHAR(50))+' '+@empfirstname+' '+@emplastname;
 
- FETCH NEXT FROM Mycursorp INTO @empid,@empfirstname,@emplastname-----------> HEAR USING WITH VARIABLE CURSOR WITH NEXT METHOD
+ FETCH NEXT FROM Mycursorp INTO @empid,@empfirstname,@emplastname-----------> HEAR USING WITH VARIABLE CURSOR WITH NEXT METHOD and declare variables
   PRINT 'Employee is: '+CAST(@empid AS VARCHAR(50))+' '+@empfirstname+' '+@emplastname;
 
-  FETCH LAST FROM Mycursorp INTO @empid,@empfirstname,@emplastname-----------> HEAR USING WITH VARIABLE CURSOR WITH LAST METHOD
+  FETCH LAST FROM Mycursorp INTO @empid,@empfirstname,@emplastname-----------> HEAR USING WITH VARIABLE CURSOR WITH LAST METHOD and declare variables
    PRINT 'Employee is: '+CAST(@empid AS VARCHAR(50))+' '+@empfirstname+' '+@emplastname;
 
- FETCH PRIOR FROM Mycursorp INTO @empid,@empfirstname,@emplastname-----------> HEAR USING WITH VARIABLE CURSOR WITH PRIOR METHOD
+ FETCH PRIOR FROM Mycursorp INTO @empid,@empfirstname,@emplastname-----------> HEAR USING WITH VARIABLE CURSOR WITH PRIOR METHOD and declare variables
  PRINT 'Employee is: '+CAST(@empid AS VARCHAR(50))+' '+@empfirstname+' '+@emplastname;
 
- FETCH ABSOLUTE 5 FROM Mycursorp INTO @empid,@empfirstname,@emplastname -----------> HEAR USING WITH VARIABLE CURSOR WITH ABSOLUTE METHOD
+ FETCH ABSOLUTE 5 FROM Mycursorp INTO @empid,@empfirstname,@emplastname -----------> HEAR USING WITH VARIABLE CURSOR WITH ABSOLUTE METHOD and declare variables
   PRINT 'Employee is: '+CAST(@empid AS VARCHAR(50))+' '+@empfirstname+' '+@emplastname;
 
  FETCH RELATIVE -3 FROM Mycursorp INTO @empid,@empfirstname,@emplastname-----------> HEAR USING WITH VARIABLE CURSOR WITH RELATIVE METHOD HEAR ABSOLUTE +RELATIVE
