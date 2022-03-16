@@ -79,7 +79,7 @@ when a cursor is opened , rows can be fecthed from the cursor one by one or in a
 
 ---------------------------------------WITHOUT CURSOR VARIABLE--------------------------------
 
- FETCH FIRST FROM Mycursor -----------> HEAR USING WITHOUT VARIABLE CURSOR WITH first METHOD
+ FETCH FIRST FROM Mycursor -----------> HEAR USING WITHOUT VARIABLE CURSOR WITH first METHODs
  FETCH NEXT FROM Mycursor-----------> HEAR USING WITHOUT VARIABLE CURSOR WITH NEXT METHOD
   FETCH LAST FROM Mycursor-----------> HEAR USING WITHOUT VARIABLE CURSOR WITH LAST METHOD
  FETCH PRIOR FROM Mycursor-----------> HEAR USING WITHOUT VARIABLE CURSOR WITH PRIOR METHOD
@@ -110,19 +110,19 @@ DEALLOCATE Mycursor;
 when a cursor is opened , rows can be fecthed from the cursor one by one or in a block to do data manipulation*/
 
 
- FETCH FIRST FROM Mycursorp INTO @empid, @empfirstname, @emplastname -----------> HEAR USING WITH VARIABLE CURSOR WITH first METHOD
+ FETCH FIRST FROM Mycursorp INTO @empid, @empfirstname, @emplastname -----------> HEAR USING WITH VARIABLE CURSOR WITH first METHOD and declare variables
  PRINT 'Employee is: '+CAST(@empid AS VARCHAR(50))+' '+@empfirstname+' '+@emplastname;
 
- FETCH NEXT FROM Mycursorp INTO @empid,@empfirstname,@emplastname-----------> HEAR USING WITH VARIABLE CURSOR WITH NEXT METHOD
+ FETCH NEXT FROM Mycursorp INTO @empid,@empfirstname,@emplastname-----------> HEAR USING WITH VARIABLE CURSOR WITH NEXT METHOD and declare variables
   PRINT 'Employee is: '+CAST(@empid AS VARCHAR(50))+' '+@empfirstname+' '+@emplastname;
 
-  FETCH LAST FROM Mycursorp INTO @empid,@empfirstname,@emplastname-----------> HEAR USING WITH VARIABLE CURSOR WITH LAST METHOD
+  FETCH LAST FROM Mycursorp INTO @empid,@empfirstname,@emplastname-----------> HEAR USING WITH VARIABLE CURSOR WITH LAST METHOD and declare variables
    PRINT 'Employee is: '+CAST(@empid AS VARCHAR(50))+' '+@empfirstname+' '+@emplastname;
 
- FETCH PRIOR FROM Mycursorp INTO @empid,@empfirstname,@emplastname-----------> HEAR USING WITH VARIABLE CURSOR WITH PRIOR METHOD
+ FETCH PRIOR FROM Mycursorp INTO @empid,@empfirstname,@emplastname-----------> HEAR USING WITH VARIABLE CURSOR WITH PRIOR METHOD and declare variables
  PRINT 'Employee is: '+CAST(@empid AS VARCHAR(50))+' '+@empfirstname+' '+@emplastname;
 
- FETCH ABSOLUTE 5 FROM Mycursorp INTO @empid,@empfirstname,@emplastname -----------> HEAR USING WITH VARIABLE CURSOR WITH ABSOLUTE METHOD
+ FETCH ABSOLUTE 5 FROM Mycursorp INTO @empid,@empfirstname,@emplastname -----------> HEAR USING WITH VARIABLE CURSOR WITH ABSOLUTE METHOD and declare variables
   PRINT 'Employee is: '+CAST(@empid AS VARCHAR(50))+' '+@empfirstname+' '+@emplastname;
 
  FETCH RELATIVE -3 FROM Mycursorp INTO @empid,@empfirstname,@emplastname-----------> HEAR USING WITH VARIABLE CURSOR WITH RELATIVE METHOD HEAR ABSOLUTE +RELATIVE
@@ -130,13 +130,13 @@ when a cursor is opened , rows can be fecthed from the cursor one by one or in a
 
 
 /*4)closing cursor :-
-the cursor should be closed by explicit after dml
+the cursor should be closed by explicit after dml = data manipulation language
 */
 CLOSE Mycursorp---------close cursor
 /*
 5)de-allocating cursor:-
 cursors should be deallocated to delete cursor defination and release all the system resources with the cursor
-when your work or function is complte using cursor, destroy or delete cursor
+when your work or function is complte using cursor, destroy or delete cursor 
 */
 DEALLOCATE Mycursorp;
 
