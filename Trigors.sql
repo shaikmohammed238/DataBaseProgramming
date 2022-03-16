@@ -65,7 +65,7 @@ GO
 
 ENABLE TRIGGER TRG_delete_audit ON EmployList
 GO
--------- HOW TO DROP TRIGGERS---------
+-------- HOW TO DROP TRIGGERS-------
 DROP TRIGGER TRG_delete_audit
 
  GO
