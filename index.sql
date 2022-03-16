@@ -15,7 +15,7 @@ Indexes with included columns – describe how to add non-key columns to a nonclus
 Filtered indexes – .
 Indexes on computed columns – walk you through how to simulate function-based indexes using the indexes on computed columns.
    
- -------------------------------Clustered indexes--------------------------------------------------
+ -------------------------------Clustered indexes----------------------------------------------------------
  When you create a table with a primary key, SQL Server automatically creates a corresponding clustered index based on columns included in the primary key.
 
 This statement creates a new table named production.part_prices with a primary key that includes two columns: part_id and valid_from.
