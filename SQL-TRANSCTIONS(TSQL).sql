@@ -43,9 +43,9 @@ durability (Acid] properties , to qualify as a transaction .
 *When a transaction is started on a connection , all transact SQL statements are executed on the same connection and are a part
  Of the connection until the transaction ends 
 *Transactions are managed at the connection level 
----if u want to see partiallty commited this below syntax
+--if u want to see partiallty commited this below syntax
 syntax:set transaction isolation level read uncommitted */
-set transaction isolation level read uncommitted-----syntax of uncommited
+set transaction isolation level read uncommitted---syntax of uncommited
 /* transaction types
 explicit transaction:Every transaction explicitly starts with begin transaction statement and ends With a Rollback or commit transaction 
 implicit transaction:When you cannot rollback any transaction and your transaction is automatically committed by SQL Server engine 
