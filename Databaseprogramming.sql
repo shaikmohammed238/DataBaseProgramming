@@ -425,7 +425,7 @@ SELECT
 FROM
     EmployList
 WHERE
-    LastName Like 'K%i'   ---'[YZ]%'--->means whole lastname column visible all yz character names
+    LastName Like 'K%i'   ---'[KI]%'--->means whole lastname column visible all KI character names
 ORDER BY
     FirstName;
 --For example, the following query finds the customers where the first character in the last name is the letter in the range A through C:
